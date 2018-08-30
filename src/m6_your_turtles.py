@@ -6,7 +6,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 """
 ###############################################################################
 # TODO: 1.
-#   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
+#   On Line 5 above, replace  Thomas Nandola  with your own name.
 ###############################################################################
 
 ###############################################################################
@@ -19,6 +19,19 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #     2. Each rg.SimpleTurtle object draws something
 #          (by moving, using its rg.Pen).  ANYTHING is fine!
 #     3. Each rg.SimpleTurtle moves inside a LOOP.
+
+import rosegraphics as rg
+window = rg.TurtleWindow()
+
+size = 300
+
+thomas = rg.SimpleTurtle('circle')
+thomas.Pen = rg.Pen('midnightblue',15)
+thomas.Speed = 15
+
+for k in range(20):
+    thomas.right(45)
+    thomas.forward(50)
 #
 #   Be creative!  Strive for way-cool pictures!  Abstract pictures rule!
 #

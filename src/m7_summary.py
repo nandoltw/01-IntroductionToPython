@@ -6,7 +6,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 """
 ########################################################################
 # TODO: 1.
-#   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
+#   On Line 5 above, replace  Thomas Nandola  with your own name.
 ########################################################################
 
 ########################################################################
@@ -22,6 +22,21 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #          (so that the next movements will return to leaving a "trail")
 #     - Makes the SimpleTurtle's pen have color "green" and thickness 10.
 #     - Tells the SimpleTurtle to go 150 pixels straight DOWN.
+
+import rosegraphics as rg
+
+turtle = rg.SimpleTurtle()
+size = 300
+turtle.pen = rg.Pen('blue',20)
+turtle.left(90)
+turtle.forward(200)
+turtle.pen_up()
+turtle.go_to(rg.Point(100,-40))
+turtle.pen_down()
+turtle.pen = rg.Pen('green',10)
+turtle.left(180)
+turtle.forward(150)
+
 #
 # Don't forget to:
 #     - import rosegraphics and construct a TurtleWindow
